@@ -1,0 +1,262 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+
+
+.blog-home2 {
+ font-family: "Montserrat", sans-serif;
+ color: #8d97ad;
+ font-weight: 300;
+ background-image: url('https://freepixels.com/wp-content/uploads/Architecture/Cities/080311a8100-winter-city-snowfall-snow-frost.jpg');
+ background-size: cover;
+ background-attachment: fixed; /* Fixes the background image */
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+
+.blog-home2 h1,
+.blog-home2 h2,
+.blog-home2 h3,
+.blog-home2 h4,
+.blog-home2 h5,
+.blog-home2 h6 {
+ color: #3e4555;
+}
+
+
+.blog-home2 .font-weight-medium {
+ font-weight: 500;
+}
+
+
+.blog-home2 .bg-light {
+ background-color: #f4f8fa !important;
+}
+
+
+.blog-home2 .subtitle {
+ color: #8d97ad;
+ line-height: 24px;
+}
+
+
+.blog-home2 .text-themecolor {
+ color: #316ce8;
+}
+
+
+.blog-home2 h5 {
+ line-height: 22px;
+ font-size: 18px;
+}
+
+
+.blog-home2 a.link {
+ color: #3e4555;
+}
+
+
+.blog-home2 a.link:hover {
+ color: #316ce8;
+}
+
+
+.blog-home2 .on-hover {
+ transition: transform 0.2s ease-in;
+}
+
+
+.blog-home2 .on-hover:hover {
+ transform: translateY(-10px);
+}
+
+
+.blog-home2 .date-pos {
+ right: 10px;
+ top: 10px;
+}
+
+
+.blog-home2 .date-pos span {
+ font-size: 30px;
+ line-height: 30px;
+}
+
+
+.blog-home2 .bg-info-gradiant {
+ background: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
+}
+
+
+.navbar {
+ background-color: transparent;
+ position: fixed; /* Changed to fixed for a consistent top position */
+ width: 100%;
+ z-index: 10;
+ padding: 0 40px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for better visibility */
+}
+
+
+.navbar-brand {
+ padding-left: 0;
+}
+
+
+.navbar a {
+ color: #fff;
+}
+
+
+.navbar a:hover {
+ color: #2f2f2f;
+}
+
+
+.navbar-nav .nav-link {
+ position: relative;
+ padding: 10px 15px;
+ text-decoration: none;
+ color: #fff;
+ overflow: hidden;
+}
+
+
+.navbar-nav .nav-link::after {
+ content: "";
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ height: 2px;
+ width: 100%;
+ background-color: #000000;
+ transform: scaleX(0);
+ transform-origin: left;
+ transition: transform 0.3s ease;
+}
+
+
+.navbar-nav .nav-link:hover::after {
+ transform: scaleX(1);
+}
+
+
+/* Blog Post Styling */
+.blog-home2 .blog-post {
+ margin: 20px 0;
+ padding: 20px;
+ background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+ border-radius: 10px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.blog-home2 .blog-post h3 {
+ font-size: 24px;
+ margin-bottom: 10px;
+ color: #3e4555;
+}
+
+
+.blog-home2 .blog-post p {
+ color: #555;
+ line-height: 1.6;
+}
+
+
+.blog-home2 .blog-post .blog-date {
+ font-size: 0.9em;
+ color: #888;
+ margin-bottom: 10px;
+}
+
+
+.blog-home2 .blog-post a {
+ color: #316ce8;
+ text-decoration: none;
+ font-weight: 500;
+}
+
+
+.blog-home2 .blog-post a:hover {
+ text-decoration: underline;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    color: #6c757d;
+  }
+  .social-media {
+    background-color: #3b4e69;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .social-media p {
+    margin: 0;
+    font-size: 18px;
+  }
+  .social-media .icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .social-media .icons a:hover {
+    color: #dab1b1;
+  }
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+    border-top: 1px solid #e9ecef;
+    background-color: #3b4e69;
+    
+  }
+  .footer-content .column {
+    flex: 1 1 250px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  .footer-content h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .footer-content p, .footer-content ul, .footer-content li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .footer-content p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .footer-content ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .footer-content ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .footer-content ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  .footer-content ul li i {
+    margin-right: 10px;
+  }
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e9ecef;
+    font-size: 14px;
+    color: #6c757d;
+  }
+
+

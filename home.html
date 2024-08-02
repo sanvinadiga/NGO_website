@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAMINAVE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+    }
+
+    .navbar {
+      background-color: transparent;
+      position: absolute;
+      width: 100%;
+      z-index: 10;
+      padding: 0 40px; /* Add padding to the left and right */
+    }
+    .navbar-brand {
+      padding-left: 0px;
+    }
+    .navbar a {
+      color: #fff;
+    }
+    .navbar a:hover {
+      color: #d4c2bf; /* Change this to your desired hover color */
+    }
+    .navbar-nav .nav-link {
+      position: relative;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #fff;
+      overflow: hidden;
+    }
+    .navbar-nav .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #fff;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .navbar-nav .nav-link:hover::after {
+      transform: scaleX(1);
+    }
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      color: #6c757d;
+    }
+    .social-media {
+      background-color: #3b4e69;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .social-media p {
+      margin: 0;
+      font-size: 18px;
+    }
+    .social-media .icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .social-media .icons a:hover {
+      color: #dab1b1;
+    }
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 40px 20px;
+      border-top: 1px solid #e9ecef;
+      background-color: #3b4e69;
+      
+    }
+    .footer-content .column {
+      flex: 1 1 250px;
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+    .footer-content h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: #ffffff;
+    }
+    .footer-content p, .footer-content ul, .footer-content li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .footer-content p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .footer-content ul li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .footer-content ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .footer-content ul li a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+    .footer-content ul li i {
+      margin-right: 10px;
+    }
+    .footer-bottom {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #e9ecef;
+      font-size: 14px;
+      color: #6c757d;
+    }
+    .carousel-item img {
+      height: 100vh;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .card{
+      padding: 30px 20px 40px 20px;
+    }
+
+    .accordion{
+      padding-top:20px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"><strong>PAMINAVE</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="event.html">EVENTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="donation.html">DONATION</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">ABOUT US</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link" href="#">Media</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>-->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Carousel start -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="ngo1.jpg" class="d-block w-100" alt="color">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to <strong>PARISARA MITHRA NAGARIKA VEDIKE</strong></h5>
+          <p>Building a Brighter Future Together</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="ngo2.jpeg" class="d-block w-100" alt="aa">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="ngo3.jpeg" class="d-block w-100" alt="aa">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Carousel end -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img src="water.jpg" class="card-img-top" alt="water pollution">
+          <div class="card-body">
+            <p class="card-text">We work against water pollution and support in restoring clean water to the water bodies </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img src="air.jpg" class="card-img-top" alt="air pollution">
+          <div class="card-body">
+            <p class="card-text">We work against air pollution and ensuring clean air to the surroundings</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img src="soil.jpg" class="card-img-top" alt="water pollution">
+          <div class="card-body">
+            <p class="card-text">We work against soil erosion and Disposal of garbage</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Accordion start -->
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+         <strong> PARISARA MITHRA NAGARIKA VEDIKE ® (PAMINAVE)</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          <strong>PAMINAVE</strong> is a dedicated NGO committed to provide Single Window Solutions for environmental
+          conservation and sustainable practices. PAMINAVE principles reflect a holistic approach to fostering
+          environmental responsibility in practically, especially among Community Apartments and Industries
+          implementing a circular economy for the protection of Natural resources and the management of
+          environmental issues.
+          
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          <strong>Environmental Management Solutions</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>PAMINAVE</strong> focuses on developing and implementing effective environmental management practices by learning from past experiences and analyzing current issues to create integrated solutions.
+        <ul>
+         <li><strong>Thought Pollution:</strong> PAMINAVE aims to help industrialists address negative thoughts and biases, promoting mental well-being and positive thinking for industrial growth and a harmonious society.</li>
+          
+         <li><strong>Environmental Pollution Control:</strong> PAMINAVE is committed to reducing pollution and mitigating its adverse effects, ensuring the protection of natural resources and the environment.</li>
+          
+         <li><strong>Natural Resources Pollution Control:</strong> PAMINAVE educates industrialists on the importance of conserving and protecting air, water, and land, emphasizing sustainable practices and responsible resource management.</li>
+          
+         <li><strong>Circular Economy Implementation:</strong> PAMINAVE advocates for minimizing waste, promoting recycling and reuse, and ensuring efficient resource use to reduce environmental impact and support sustainable business practices.</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          <strong>Sustainable Water Management Practices</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <ol>
+            <li><strong>Water Recycling and Reuse:</strong> Implement systems to treat and reuse water for non-potable purposes like cooling or irrigation.<br><br></li>
+
+            <li><strong>Water Use:</strong> Install water-efficient equipment, optimize processes to minimize wastage, and conduct regular audits for improvement.<br><br></li>
+            
+            <li><strong>Stormwater Management:</strong> Capture and treat stormwater runoff to prevent pollution and replenish groundwater.<br><br></li>
+            
+            <li><strong>Supply Chain Collaboration:</strong> Work with suppliers to promote sustainable water practices, responsible sourcing, and water stewardship.<br><br></li>
+            
+            <li><strong>Employee Training and Engagement:</strong> Educate employees on water conservation, encourage water-saving behaviors, and involve them in water-saving initiatives.<br><br></li>
+            
+            By integrating and continually improving these strategies, industries can enhance sustainable water use and environmental stewardship.
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Accordion end -->
+
+  <footer class="footer mt-5">
+    <div class="social-media">
+      <p>Get connected with us on social networks:</p>
+      <div class="icons">
+        <a href="https://www.instagram.com/paminave_2020?igsh=bzNrYzhuZ3h5bjFy"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/paminave-2020/"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row footer-content">
+        <div class="col-md-7 column">
+          <h3>PARISARA MITHRA NAGARIKA VEDIKE</h3>
+          <p style="color:#70c3ea"><i><strong>A step closer towards sustainability.</strong></i></p>
+        </div>
+        <div class="col-md-5 column">
+          <h3>CONTACT US</h3>
+          <ul style="color:#fff">
+            <li><i class="fa fa-map-marker-alt"></i>#60, Anugraha Nilaya Ground Floor, <br>19th Main , ITI Layout. Bengaluru , India</li>
+            <li><i class="fa fa-envelope" style="color:rgb(220, 97, 97)"></i>parisaramitranagarika@gmail.com</li>
+            <li><i class="fa fa-phone" style="color:rgba(0, 255, 242, 0.932)"></i>+91 9341019121</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Copyright: PAMINAVE</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
